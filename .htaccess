@@ -1,0 +1,5 @@
+RewriteEngine On
+
+# Chuyển hướng tất cả yêu cầu vào thư mục public
+RewriteCond %{REQUEST_URI} !^/vmc/public/
+RewriteRule ^(.*)$ /vmc/public/$1 [L]
